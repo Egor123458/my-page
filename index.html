@@ -1,69 +1,134 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<title>MACAN: ОФИЦИАЛЬНАЯ СТРАНИЦА</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACAN: ОФИЦИАЛЬНАЯ СТРАНИЦА</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Базовые настройки страницы */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif; /* Читаемый рубленый шрифт */
+            background-image: url('maxresdefault.jpg');
+            background-color: #121212; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #E0E0E0; /* Светло-серый текст, от которого не болят глаза */
+            line-height: 1.6; /* Комфортный интервал между строками */
+        }
+
+        a { color: #FF0000; text-decoration: none; font-weight: bold; }
+        a:hover { color: #ff4d4d; text-decoration: underline; }
+
+        /* Бегущая строка (современная замена marquee) */
+        .ticker-wrap {
+            width: 100%;
+            background-color: #330000;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 12px 0;
+            border-bottom: 2px solid #FF0000;
+        }
+        .ticker {
+            display: inline-block;
+            animation: ticker 20s linear infinite;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Главный контейнер (подложка для читаемости) */
+        .container {
+            max-width: 800px;
+            margin: 40px auto; /* Центрируем по горизонтали */
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.75); /* Полупрозрачный черный фон */
+            border-radius: 15px; /* Скругленные углы */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: #fff; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { color: #aaa; font-size: 0.9em; }
+
+        /* Блок с картинкой и текстом */
+        .content-flex {
+            display: flex;
+            gap: 40px; /* Расстояние между картинкой и текстом */
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .content-flex img {
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2); /* Легкое красное свечение */
+            transition: transform 0.3s;
+        }
+        .content-flex img:hover {
+            transform: scale(1.05); /* Картинка чуть увеличивается при наведении */
+        }
+
+        .merits h2 { color: #fff; border-bottom: 1px solid #FF0000; padding-bottom: 5px; }
+        .merits ul { list-style-type: square; padding-left: 20px; }
+        .merits li { margin-bottom: 10px; }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+            font-size: 0.85em;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
 </head>
-<body style="background-image: url('maxresdefault.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;" text="#FFFFFF" link="#FF0000" alink="#FFFFFF" vlink="#880000">
-<marquee bgcolor="#330000" loop="infinite" scrollamount="8">
-<b>🐺 ВОЛК СЛАБЕЕ ЛЬВА И ТИГРА, НО В ЦИРКЕ ОН НЕ ВЫСТУПАЕТ... СКОРОСТЬ 240... ЕСЛИ МЕНЯ НЕТ В СЕТИ, Я НА ТРАССЕ... АУФ... 🐺</b>
-</marquee>
+<body>
 
-<center>
-<br>
-<H1>MACAN. ГОЛОС УЛИЦ.</H1>
-<font color="#FFFFFF" size="3">(Вход только для тех, кто умеет ждать и молчать)</font> 
-</center>
-<br>
+    <div class="ticker-wrap">
+        <div class="ticker">🐺 ВОЛК СЛАБЕЕ ЛЬВА И ТИГРА, НО В ЦИРКЕ ОН НЕ ВЫСТУПАЕТ... СКОРОСТЬ 240... ЕСЛИ МЕНЯ НЕТ В СЕТИ, Я НА ТРАССЕ... АУФ... 🐺</div>
+    </div>
 
-<p align="justify">
-<a href="https://xn--80aneakq5ade5a9a.xn--p1ai/?utm_source=ya&utm_medium=poisk&utm_campaign=704832147&utm_group=5676955364&utm_content=17445693424&etext=2202.uHsuos4opRqXRyzgMVKFztuSWVU7JsO4KkOk0aY8JKkjFRJnMtUiB9CYW_zlOMfcYWpieGdpYml5d3VoYmlvdQ.8c0e4972523c4f7d24f557012ea8e11485bb0b46&ybaip=1"><img src="12.png" width="250" align="left" HSPACE=1 VSPACE=1alt="Кнопка судьбы"></a> 
+    <div class="container">
+        <header>
+            <h1>MACAN. ГОЛОС УЛИЦ.</h1>
+            <div class="subtitle">(Вход только для тех, кто умеет ждать и молчать)</div>
+        </header>
 
-<font size="4" face="Arial", color="#FFFFFF">
-<br>
-<br>   
-<br>
-<br>
-<br>
-<br>
-                
-<b>Салам всем своим.</b><br><br>
-Если ты зашел сюда, значит, ты знаешь цену словам. <br>
-Это не сайт а МОТИВАЦИЯ. <br>
-Слева ты видишь <b>ГЛАВНУЮ КНОПКУ</b> в жизни мужчины. <br>
-На ней написано просто: <b>СЛУЖИТЬ</b>. <br>
- Настоящий мужчина должен всегда служить Российской Армии и выглядеть как <a href="prf.html"> MACAN </a> .<br><br>
-</font>
-</p>
+        <div class="content-flex">
+            <a href="https://xn--80aneakq5ade5a9a.xn--p1ai/?utm_source=ya&utm_medium=poisk&utm_campaign=704832147&utm_group=5676955364&utm_content=17445693424&etext=2202.uHsuos4opRqXRyzgMVKFztuSWVU7JsO4KkOk0aY8JKkjFRJnMtUiB9CYW_zlOMfcYWpieGdpYml5d3VoYmlvdQ.8c0e4972523c4f7d24f557012ea8e11485bb0b46&ybaip=1" target="_blank">
+                <img src="12.png" width="250" alt="Кнопка судьбы">
+            </a> 
 
-<br clear="all"> 
+            <div class="text-block">
+                <p><b>Салам всем своим.</b></p>
+                <p>Если ты зашел сюда, значит, ты знаешь цену словам.<br>
+                Это не сайт, а МОТИВАЦИЯ.<br>
+                Слева ты видишь <b>ГЛАВНУЮ КНОПКУ</b> в жизни мужчины.<br>
+                На ней написано просто: <b>СЛУЖИТЬ</b>.</p>
+                <p>Настоящий мужчина должен всегда служить Российской Армии и выглядеть как <a href="prf.html">MACAN</a>.</p>
+            </div>
+        </div>
 
-<hr> <b>Заслуги:</b>
+        <div class="merits">
+            <h2>Заслуги:</h2>
+            <ul>
+                <li>Пошел служить</li>
+                <li><a href="https://music.yandex.ru/album/37458189" target="_blank">Выпустил BRATLEND</a></li>
+                <li>Купил BMW M5 COMPETITION</li>
+            </ul>
+        </div>
 
-<ul>
-<li>Пошел служить</li>
-</ul>
-
-<ul>
-<ul>
-<li><a href="https://music.yandex.ru/album/37458189"> Выпустил BRATLEND </a></li>
-</ul>
-</ul>
-
-<ul>
-<ul>
-<ul>
-<li>Купил BMW M5 COMPETISHON</li>
-</ul>
-</ul>
-</ul>
-<br><br>
-<center>
-<font color="#555555" size="2">
-_________________________<br>
-Обнял. Приподнял. Затонировал.<br>
-(с) Цитаты великих. 2026.
-</font>
-</center>
+        <footer>
+            Обнял. Приподнял. Затонировал.<br>
+            (с) Цитаты великих. 2026.
+        </footer>
+    </div>
 
 </body>
-
 </html>
